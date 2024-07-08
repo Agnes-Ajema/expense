@@ -5,4 +5,67 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"/>
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/tvBag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/income" />
+
+    <TextView
+        android:id="@+id/tvMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Money In"
+        app:layout_constraintBottom_toBottomOf="@+id/tvBag"
+        app:layout_constraintStart_toEndOf="@+id/tvBag"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.288" />
+
+    <TextView
+        android:id="@+id/tvKsh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="KES 42 244"
+        app:layout_constraintStart_toEndOf="@+id/tvBag"
+        app:layout_constraintTop_toBottomOf="@+id/tvMoney" />
+
+    <ImageView
+        android:id="@+id/tvCash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toEndOf="@+id/tvKsh"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/expense" />
+
+    <TextView
+        android:id="@+id/tvOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:text="Money Out"
+        app:layout_constraintStart_toEndOf="@+id/tvCash"
+        app:layout_constraintTop_toTopOf="@+id/tvCash" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/tvCash"
+        app:layout_constraintTop_toBottomOf="@+id/tvOut" />
+</androidx.constraintlayout.widget.ConstraintLayout>
